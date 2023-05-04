@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+.main_div {
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 99%),
+    hsl(270, 20%, 96%)
+  );
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.mobile {
+  border: 0.7rem solid hsl(0, 0%, 100%);
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 2rem;
+  width: 15rem;
+  margin-top: 5rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 1px 1px 3px #949494;
+}
+.chat_head {
+  background-image: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  border-radius: 1.7rem 1.7rem 0.7rem 0.7rem;
+  color: hsl(276, 100%, 81%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.5rem;
+  font-weight: 400;
+  padding: 1.5rem 1rem 0.6rem 1rem;
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+.oval {
+  background-color: hsl(0, 0%, 100%);
+  width: 8rem;
+  height: 1.1rem;
+  border-radius: 0px 0px 20px 20px;
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+.chat_head img {
+  width: 1.5rem;
+  border-radius: 50%;
+  border: 0.12rem solid hsl(0, 0%, 100%);
+  margin: 0 0.5rem;
+}
+.chat_head div,
+h6,
+p {
+  margin: 0;
+}
+.chat_head h6 {
+  color: hsl(0, 0%, 95%);
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-bottom: 0.1rem;
+}
+
+.sender_chat {
+  background-color: hsl(206, 6%, 90%);
+  width: 10rem;
+  margin: 0.3rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem 1rem 1rem 0.5rem;
+  color: hsl(276, 55%, 52%);
+  font-size: 0.6rem;
+}
+.reciever_chat {
+  background-color: hsl(0, 0%, 100%);
+  width: 10rem;
+  margin: 0.3rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem 1rem 0.5rem 1rem;
+  color: hsl(271, 15%, 43%);
+  font-size: 0.6rem;
+  align-self: self-end;
+}
+#img_chat {
+  background-color: hsl(270, 20%, 96%);
+  margin: 0rem;
+  text-align: right;
+}
+
+.reciever_chat img {
+  width: 2.5rem;
+  border-radius: 0.6rem;
+}
+.payment_plan {
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  width: 10rem;
+  margin: 0.3rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem 1rem 1rem 0.5rem;
+  color: hsl(0, 10%, 90%);
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.payment_plan span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+
+.rd_btn {
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 0.12rem solid hsl(289, 100%, 72%);
+  border-radius: 50%;
+}
+.textbox_style {
+  background-color: hsl(0, 0%, 100%);
+  width: 88%;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  color: hsl(270, 7%, 64%);
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.submit_btn {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.1rem;
+}
+.booking {
+  margin: 1rem 3rem;
+  text-align: center;
+  color: hsl(270, 7%, 64%);
+  line-height: 1.8;
+  z-index: 2;
+}
+.booking h1 {
+  color: hsl(271, 36%, 24%);
+}
+.main_div .purple {
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  position: absolute;
+  left: 0;
+  width: 12rem;
+  height: 30rem;
+  border-radius: 0 0 1000px 0;
+  z-index: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.gray {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .main_div {
+    width: 100%;
+    flex-direction: row;
+    height: 100vh;
+  }
+  .mobile {
+    position: absolute;
+    top: 4rem;
+    left: 20rem;
+    width: 16rem;
+  }
+  .main_div .purple {
+    width: 25rem;
+    height: 88%;
+    top: 0;
+    left: -2rem;
+    border-radius: 0 0 500px 500px;
+  }
+  .booking {
+    width: 30%;
+    position: relative;
+    left: 40rem;
+    z-index: 2;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  .gray {
+    display: block;
+    background-color: #f5f2f2;
+    position: fixed;
+    right: -8rem;
+    bottom: 1;
+    width: 25rem;
+    height: 80%;
+    border-radius: 500px 500px 0 0;
+    z-index: 1;
+  }
+}
